@@ -1,0 +1,12 @@
+#ifndef __com_monkey_pickled_interpolateshapes_idl__
+#define __com_monkey_pickled_interpolateshapes_idl__
+
+#include <com/monkey/pickled/XInterpolateShapes.idl>
+module com { module monkey { module pickled { 	
+
+	service InterpolateShapes : com::monkey::pickled::XInterpolateShapes {
+
+	};
+
+ }; }; };
+#endif

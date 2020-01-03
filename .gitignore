@@ -9,6 +9,11 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+build/
+dist/
+
+# Libre Office Stuff
+.unoproject
 
 # Eclipse Core
 .project

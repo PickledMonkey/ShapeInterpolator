@@ -1,0 +1,12 @@
+#ifndef __com_monkey_pickled_xinterpolateshapes_idl__
+#define __com_monkey_pickled_xinterpolateshapes_idl__
+
+#include <com/sun/star/task/XJobExecutor.idl>
+module com { module monkey { module pickled { 	
+
+	interface XInterpolateShapes : com::sun::star::task::XJobExecutor {
+
+	};
+
+ }; }; };
+#endif

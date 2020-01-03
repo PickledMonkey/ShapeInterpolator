@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:name="Accelerators"
+	oor:package="org.openoffice.Office">
+	<node oor:name="PrimaryKeys">
+		<node oor:name="Modules">
+			<node oor:name="com.sun.star.drawing.DrawingDocument">
+
+				<node oor:name="1_SHIFT_MOD1" oor:op="replace">
+					<prop oor:name="Command">
+						<value xml:lang="en-US">service:com.monkey.pickled.InterpolateShapes?resetSplineGenerationSet</value>
+					</prop>
+				</node>
+
+				<node oor:name="2_SHIFT_MOD1" oor:op="replace">
+					<prop oor:name="Command">
+						<value xml:lang="en-US">service:com.monkey.pickled.InterpolateShapes?addShapeSetToSplineGen</value>
+					</prop>
+				</node>
+
+				<node oor:name="3_SHIFT_MOD1" oor:op="replace">
+					<prop oor:name="Command">
+						<value xml:lang="en-US">service:com.monkey.pickled.InterpolateShapes?generateSplines</value>
+					</prop>
+				</node>
+				
+				<node oor:name="4_SHIFT_MOD1" oor:op="replace">
+					<prop oor:name="Command">
+						<value xml:lang="en-US">service:com.monkey.pickled.InterpolateShapes?renameShape</value>
+					</prop>
+				</node>
+				
+				<node oor:name="5_SHIFT_MOD1" oor:op="replace">
+					<prop oor:name="Command">
+						<value xml:lang="en-US">service:com.monkey.pickled.InterpolateShapes?setAsInterpolationSet</value>
+					</prop>
+				</node>
+
+			</node>
+		</node>
+	</node>
+</oor:component-data>

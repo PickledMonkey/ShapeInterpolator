@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-data oor:package="org.openoffice.Office" oor:name="Addons"
+	xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<node oor:name="AddonUI">
+
+		<node oor:name="Images">
+		
+			<node oor:name="com.monkey.pickled.interpolateshapes.imageResetSplineGenSet" oor:op="replace">
+				<prop oor:name="URL" oor:type="xs:string">
+					<value>com.monkey.pickled.InterpolateShapes?resetSplineGenerationSet</value>
+				</prop>
+				<node oor:name="UserDefinedImages">
+					<prop oor:name="ImageSmallURL">
+						<value>vnd.sun.star.extension://com.monkey.pickled.interpolateshapes/images/JiveAvatar_1.png</value>
+					</prop>
+					<prop oor:name="ImageBigURL">
+						<value>vnd.sun.star.extension://com.monkey.pickled.interpolateshapes/images/JiveAvatar_2.png</value>
+					</prop>
+				</node>
+			</node>
+
+			<node oor:name="com.monkey.pickled.interpolateshapes.imageAddShapeSetToSplineGen" oor:op="replace">
+				<prop oor:name="URL" oor:type="xs:string">
+					<value>com.monkey.pickled.InterpolateShapes?addShapeSetToSplineGen</value>
+				</prop>
+				<node oor:name="UserDefinedImages">
+					<prop oor:name="ImageSmallURL">
+						<value>vnd.sun.star.extension://com.monkey.pickled.interpolateshapes/images/JiveAvatar_1.png</value>
+					</prop>
+					<prop oor:name="ImageBigURL">
+						<value>vnd.sun.star.extension://com.monkey.pickled.interpolateshapes/images/JiveAvatar_2.png</value>
+					</prop>
+				</node>
+			</node>
+
+			<node oor:name="com.monkey.pickled.interpolateshapes.imageGenerateSplines" oor:op="replace">
+				<prop oor:name="URL" oor:type="xs:string">
+					<value>com.monkey.pickled.InterpolateShapes?generateSplines</value>
+				</prop>
+				<node oor:name="UserDefinedImages">
+					<prop oor:name="ImageSmallURL">
+						<value>vnd.sun.star.extension://com.monkey.pickled.interpolateshapes/images/JiveAvatar_1.png</value>
+					</prop>
+					<prop oor:name="ImageBigURL">
+						<value>vnd.sun.star.extension://com.monkey.pickled.interpolateshapes/images/JiveAvatar_2.png</value>
+					</prop>
+				</node>
+			</node>
+			
+			<node oor:name="com.monkey.pickled.interpolateshapes.imageRenameShape" oor:op="replace">
+				<prop oor:name="URL" oor:type="xs:string">
+					<value>com.monkey.pickled.InterpolateShapes?renameShape</value>
+				</prop>
+				<node oor:name="UserDefinedImages">
+					<prop oor:name="ImageSmallURL">
+						<value>vnd.sun.star.extension://com.monkey.pickled.interpolateshapes/images/JiveAvatar_1.png</value>
+					</prop>
+					<prop oor:name="ImageBigURL">
+						<value>vnd.sun.star.extension://com.monkey.pickled.interpolateshapes/images/JiveAvatar_2.png</value>
+					</prop>
+				</node>
+			</node>
+			
+			<node oor:name="com.monkey.pickled.interpolateshapes.imageSetAsInterpolationSet" oor:op="replace">
+				<prop oor:name="URL" oor:type="xs:string">
+					<value>com.monkey.pickled.InterpolateShapes?setAsInterpolationSet</value>
+				</prop>
+				<node oor:name="UserDefinedImages">
+					<prop oor:name="ImageSmallURL">
+						<value>vnd.sun.star.extension://com.monkey.pickled.interpolateshapes/images/JiveAvatar_1.png</value>
+					</prop>
+					<prop oor:name="ImageBigURL">
+						<value>vnd.sun.star.extension://com.monkey.pickled.interpolateshapes/images/JiveAvatar_2.png</value>
+					</prop>
+				</node>
+			</node>
+			
+		</node>
+
+		<node oor:name="OfficeToolBar">
+			<node oor:name="com.monkey.pickled.interpolateshapes.toolbar" oor:op="replace">
+				<prop oor:name="Title" oor:type="xs:string">
+					<value>Interpolate Shapes</value>
+				</prop>
+
+				<node oor:name="t03" oor:op="replace">
+					<prop oor:name="URL" oor:type="xs:string">
+						<value>service:com.monkey.pickled.InterpolateShapes?resetSplineGenerationSet</value>
+					</prop>
+					<prop oor:name="Target" oor:type="xs:string">
+						<value>_self</value>
+					</prop>
+					<prop oor:name="Context" oor:type="xs:string">
+						<value>com.sun.star.drawing.DrawingDocument</value>
+					</prop>
+					<prop oor:name="Title" oor:type="xs:string">
+						<value xml:lang="en-US">Reset Spline Generation Set</value>
+					</prop>
+				</node>
+
+				<node oor:name="t04" oor:op="replace">
+					<prop oor:name="URL" oor:type="xs:string">
+						<value>service:com.monkey.pickled.InterpolateShapes?addShapeSetToSplineGen</value>
+					</prop>
+					<prop oor:name="Target" oor:type="xs:string">
+						<value>_self</value>
+					</prop>
+					<prop oor:name="Context" oor:type="xs:string">
+						<value>com.sun.star.drawing.DrawingDocument</value>
+					</prop>
+					<prop oor:name="Title" oor:type="xs:string">
+						<value xml:lang="en-US">Add Shapes to Spline Generation Set</value>
+					</prop>
+				</node>
+
+				<node oor:name="t05" oor:op="replace">
+					<prop oor:name="URL" oor:type="xs:string">
+						<value>service:com.monkey.pickled.InterpolateShapes?generateSplines</value>
+					</prop>
+					<prop oor:name="Target" oor:type="xs:string">
+						<value>_self</value>
+					</prop>
+					<prop oor:name="Context" oor:type="xs:string">
+						<value>com.sun.star.drawing.DrawingDocument</value>
+					</prop>
+					<prop oor:name="Title" oor:type="xs:string">
+						<value xml:lang="en-US">Generate Transformation Splines</value>
+					</prop>
+				</node>
+				
+				<node oor:name="t06" oor:op="replace">
+					<prop oor:name="URL" oor:type="xs:string">
+						<value>service:com.monkey.pickled.InterpolateShapes?renameShape</value>
+					</prop>
+					<prop oor:name="Target" oor:type="xs:string">
+						<value>_self</value>
+					</prop>
+					<prop oor:name="Context" oor:type="xs:string">
+						<value>com.sun.star.drawing.DrawingDocument</value>
+					</prop>
+					<prop oor:name="Title" oor:type="xs:string">
+						<value xml:lang="en-US">Rename Shapes</value>
+					</prop>
+				</node>
+				
+				<node oor:name="t07" oor:op="replace">
+					<prop oor:name="URL" oor:type="xs:string">
+						<value>service:com.monkey.pickled.InterpolateShapes?setAsInterpolationSet</value>
+					</prop>
+					<prop oor:name="Target" oor:type="xs:string">
+						<value>_self</value>
+					</prop>
+					<prop oor:name="Context" oor:type="xs:string">
+						<value>com.sun.star.drawing.DrawingDocument</value>
+					</prop>
+					<prop oor:name="Title" oor:type="xs:string">
+						<value xml:lang="en-US">Set As Interpolation Set</value>
+					</prop>
+				</node>
+
+			</node>
+		</node>
+
+		<node oor:name="OfficeMenuBar">
+			<node oor:name="com.monkey.pickled.interpolateshapes.menubar" oor:op="replace">
+				<prop oor:name="Title" oor:type="xs:string">
+					<value xml:lang="en">Interpolate Shapes</value>
+				</prop>
+				<prop oor:name="Context" oor:type="xs:string">
+					<value>com.sun.star.drawing.DrawingDocument</value>
+				</prop>
+				<node oor:name="Submenu">
+
+					<node oor:name="M3" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+							<value>service:com.monkey.pickled.InterpolateShapes?resetSplineGenerationSet</value>
+						</prop>
+						<prop oor:name="Target" oor:type="xs:string">
+							<value>_self</value>
+						</prop>
+						<prop oor:name="Title" oor:type="xs:string">
+							<value xml:lang="en-US">Reset Spline Generation Set</value>
+						</prop>
+					</node>
+
+					<node oor:name="M4" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+							<value>service:com.monkey.pickled.InterpolateShapes?addShapeSetToSplineGen</value>
+						</prop>
+						<prop oor:name="Target" oor:type="xs:string">
+							<value>_self</value>
+						</prop>
+						<prop oor:name="Title" oor:type="xs:string">
+							<value xml:lang="en-US">Add Shapes to Spline Generation Set</value>
+						</prop>
+					</node>
+
+					<node oor:name="M5" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+							<value>service:com.monkey.pickled.InterpolateShapes?generateSplines</value>
+						</prop>
+						<prop oor:name="Target" oor:type="xs:string">
+							<value>_self</value>
+						</prop>
+						<prop oor:name="Title" oor:type="xs:string">
+							<value xml:lang="en-US">Generate Transformation Splines</value>
+						</prop>
+					</node>
+					
+					<node oor:name="M6" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+							<value>service:com.monkey.pickled.InterpolateShapes?renameShape</value>
+						</prop>
+						<prop oor:name="Target" oor:type="xs:string">
+							<value>_self</value>
+						</prop>
+						<prop oor:name="Title" oor:type="xs:string">
+							<value xml:lang="en-US">Rename Shapes</value>
+						</prop>
+					</node>
+					
+					<node oor:name="M7" oor:op="replace">
+						<prop oor:name="URL" oor:type="xs:string">
+							<value>service:com.monkey.pickled.InterpolateShapes?setAsInterpolationSet</value>
+						</prop>
+						<prop oor:name="Target" oor:type="xs:string">
+							<value>_self</value>
+						</prop>
+						<prop oor:name="Title" oor:type="xs:string">
+							<value xml:lang="en-US">Set As Interpolation Set</value>
+						</prop>
+					</node>
+
+				</node>
+			</node>
+		</node>
+
+	</node>
+</oor:component-data>

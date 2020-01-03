@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="PrintShapeDialog" dlg:left="13" dlg:top="10" dlg:width="291" dlg:height="157" dlg:closeable="true" dlg:moveable="true" dlg:title="Shape Printer">
+ <dlg:bulletinboard>
+  <dlg:menulist dlg:id="ListBox1" dlg:tab-index="2" dlg:left="101" dlg:top="49" dlg:width="33" dlg:height="36" dlg:multiselection="true">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="One"/>
+    <dlg:menuitem dlg:value="Two"/>
+    <dlg:menuitem dlg:value="Three"/>
+    <dlg:menuitem dlg:value="Four"/>
+   </dlg:menupopup>
+   <script:event script:event-name="on-itemstatechange" script:macro-name="vnd.sun.star.UNO:splineConstantsChanged" script:language="UNO"/>
+  </dlg:menulist>
+  <dlg:menulist dlg:id="PointsList" dlg:tab-index="4" dlg:left="57" dlg:top="49" dlg:width="40" dlg:height="69" dlg:multiselection="true">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="Coord1"/>
+    <dlg:menuitem dlg:value="Bez1_1"/>
+    <dlg:menuitem dlg:value="Bez1_2"/>
+    <dlg:menuitem dlg:value="Coord2"/>
+    <dlg:menuitem dlg:value="Bez2_1"/>
+    <dlg:menuitem dlg:value="Bez2_2"/>
+   </dlg:menupopup>
+   <script:event script:event-name="on-itemstatechange" script:macro-name="vnd.sun.star.UNO:pointSelectionChanged" script:language="UNO"/>
+  </dlg:menulist>
+  <dlg:radiogroup>
+   <dlg:radio dlg:id="OptionButton1" dlg:tab-index="5" dlg:left="153" dlg:top="117" dlg:width="44" dlg:height="8" dlg:value="Exact" dlg:group-name="ValueModGroup">
+    <script:event script:event-name="on-itemstatechange" script:macro-name="vnd.sun.star.UNO:setConstantModExact" script:language="UNO"/>
+   </dlg:radio>
+   <dlg:radio dlg:id="OptionButton2" dlg:tab-index="6" dlg:left="153" dlg:top="101" dlg:width="44" dlg:height="8" dlg:value="Add" dlg:group-name="ValueModGroup" dlg:checked="true">
+    <script:event script:event-name="on-itemstatechange" script:macro-name="vnd.sun.star.UNO:setConstantModAdd" script:language="UNO"/>
+   </dlg:radio>
+   <dlg:radio dlg:id="OptionButton3" dlg:tab-index="7" dlg:left="153" dlg:top="109" dlg:width="44" dlg:height="8" dlg:value="Multiply" dlg:group-name="ValueModGroup">
+    <script:event script:event-name="on-itemstatechange" script:macro-name="vnd.sun.star.UNO:setConstantModMult" script:language="UNO"/>
+   </dlg:radio>
+  </dlg:radiogroup>
+  <dlg:text dlg:id="ShapeListLabel" dlg:tab-index="8" dlg:left="6" dlg:top="35" dlg:width="46" dlg:height="10" dlg:value="Shapes" dlg:align="center" dlg:valign="center"/>
+  <dlg:text dlg:id="PointListLabel" dlg:tab-index="9" dlg:left="57" dlg:top="35" dlg:width="40" dlg:height="10" dlg:value="Points" dlg:align="center" dlg:valign="center"/>
+  <dlg:text dlg:id="PolyConstantsListLabel" dlg:tab-index="10" dlg:left="101" dlg:top="35" dlg:width="33" dlg:height="10" dlg:value="Constants" dlg:align="center" dlg:valign="center"/>
+  <dlg:text dlg:id="ModTypeSelectionLabel" dlg:tab-index="11" dlg:left="151" dlg:top="85" dlg:width="48" dlg:height="10" dlg:value="Modify Type" dlg:align="center" dlg:valign="center"/>
+  <dlg:text dlg:id="ConstantModEntryLabel" dlg:tab-index="12" dlg:left="220" dlg:top="57" dlg:width="52" dlg:height="10" dlg:value="Constant Modifier" dlg:align="center" dlg:valign="center"/>
+  <dlg:button dlg:id="CloseButton" dlg:tab-index="0" dlg:left="6" dlg:top="132" dlg:width="56" dlg:height="16" dlg:value="Close">
+   <script:event script:event-name="on-performaction" script:macro-name="vnd.sun.star.UNO:closeShapePrinter" script:language="UNO"/>
+  </dlg:button>
+  <dlg:button dlg:id="PrintShapeButton" dlg:tab-index="13" dlg:left="227" dlg:top="136" dlg:width="56" dlg:height="16" dlg:value="Print Shape">
+   <script:event script:event-name="on-performaction" script:macro-name="vnd.sun.star.UNO:printShape" script:language="UNO"/>
+  </dlg:button>
+  <dlg:menulist dlg:id="ShapeList" dlg:tab-index="3" dlg:left="6" dlg:top="49" dlg:width="46" dlg:height="70" dlg:multiselection="true">
+   <dlg:menupopup>
+    <dlg:menuitem dlg:value="Shape1"/>
+    <dlg:menuitem dlg:value="Shape2"/>
+    <dlg:menuitem dlg:value="Shape3"/>
+    <dlg:menuitem dlg:value="Shape4"/>
+   </dlg:menupopup>
+   <script:event script:event-name="on-itemstatechange" script:macro-name="vnd.sun.star.UNO:shapeSelectionChanged" script:language="UNO"/>
+  </dlg:menulist>
+  <dlg:button dlg:id="SaveSplineButton" dlg:tab-index="14" dlg:left="149" dlg:top="61" dlg:width="56" dlg:height="16" dlg:value="Save Spline Set">
+   <script:event script:event-name="on-performaction" script:macro-name="vnd.sun.star.UNO:saveSplines" script:language="UNO"/>
+  </dlg:button>
+  <dlg:numericfield dlg:id="ConstantModifierField" dlg:tab-index="1" dlg:left="220" dlg:top="71" dlg:width="54" dlg:height="16">
+   <script:event script:event-name="on-textchange" script:macro-name="vnd.sun.star.UNO:constantModifierChanged" script:language="UNO"/>
+  </dlg:numericfield>
+  <dlg:numericfield dlg:id="TimeModifierField" dlg:tab-index="15" dlg:left="220" dlg:top="105" dlg:width="54" dlg:height="16">
+   <script:event script:event-name="on-textchange" script:macro-name="vnd.sun.star.UNO:timeModifierChanged" script:language="UNO"/>
+  </dlg:numericfield>
+  <dlg:text dlg:id="TimeModifierLabel" dlg:tab-index="16" dlg:left="220" dlg:top="91" dlg:width="52" dlg:height="10" dlg:value="Time Modifier" dlg:align="center" dlg:valign="center"/>
+  <dlg:button dlg:id="LoadSplineButton" dlg:tab-index="17" dlg:left="149" dlg:top="39" dlg:width="56" dlg:height="16" dlg:value="Load Spline Set">
+   <script:event script:event-name="on-performaction" script:macro-name="vnd.sun.star.UNO:loadSplines" script:language="UNO"/>
+  </dlg:button>
+  <dlg:button dlg:id="LoadShapesButton" dlg:tab-index="18" dlg:left="6" dlg:top="13" dlg:width="56" dlg:height="16" dlg:value="Load Shape Set">
+   <script:event script:event-name="on-performaction" script:macro-name="vnd.sun.star.UNO:loadShapeSet" script:language="UNO"/>
+  </dlg:button>
+  <dlg:titledbox dlg:id="ShapeSelectionBox" dlg:tab-index="19" dlg:left="4" dlg:top="3" dlg:width="137" dlg:height="127">
+   <dlg:title dlg:value="Shapes and Points"/>
+  </dlg:titledbox>
+  <dlg:button dlg:id="GenerateSplinesButton" dlg:tab-index="20" dlg:left="221" dlg:top="13" dlg:width="56" dlg:height="16" dlg:value="Generate Splines">
+   <script:event script:event-name="on-performaction" script:macro-name="vnd.sun.star.UNO:generateSplines" script:language="UNO"/>
+  </dlg:button>
+  <dlg:button dlg:id="SaveShapesButton" dlg:tab-index="21" dlg:left="76" dlg:top="13" dlg:width="56" dlg:height="16" dlg:value="Save Shape Set">
+   <script:event script:event-name="on-performaction" script:macro-name="vnd.sun.star.UNO:saveShapeSet" script:language="UNO"/>
+  </dlg:button>
+  <dlg:titledbox dlg:id="Splines" dlg:tab-index="22" dlg:left="146" dlg:top="3" dlg:width="137" dlg:height="127">
+   <dlg:title dlg:value="Splines"/>
+  </dlg:titledbox>
+  <dlg:button dlg:id="LoadSplintGenSetButton" dlg:tab-index="23" dlg:left="149" dlg:top="13" dlg:width="56" dlg:height="16" dlg:value="Load Spline Gen Set">
+   <script:event script:event-name="on-performaction" script:macro-name="vnd.sun.star.UNO:loadSplineGenSet" script:language="UNO"/>
+  </dlg:button>
+ </dlg:bulletinboard>
+</dlg:window>

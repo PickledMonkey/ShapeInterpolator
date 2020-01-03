@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dlg:window PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "dialog.dtd">
+<dlg:window xmlns:dlg="http://openoffice.org/2000/dialog" xmlns:script="http://openoffice.org/2000/script" dlg:id="SplineDialog" dlg:left="107" dlg:top="46" dlg:width="174" dlg:height="67" dlg:closeable="true" dlg:moveable="true" dlg:title="Splined Shape Creator">
+ <dlg:bulletinboard>
+  <dlg:numericfield dlg:id="SplineValField" dlg:tab-index="2" dlg:left="46" dlg:top="29" dlg:width="42" dlg:height="16" dlg:decimal-accuracy="5" dlg:value="0.0" dlg:value-min="0" dlg:value-max="1" dlg:value-step="0.01" dlg:spin="true">
+   <script:event script:event-name="on-textchange" script:macro-name="vnd.sun.star.UNO:onSplineValFieldChange" script:language="UNO"/>
+  </dlg:numericfield>
+  <dlg:button dlg:id="CloseButton" dlg:tab-index="1" dlg:left="124" dlg:top="43" dlg:width="44" dlg:height="16" dlg:value="Close">
+   <script:event script:event-name="on-performaction" script:macro-name="vnd.sun.star.UNO:onCloseButtonPressed" script:language="UNO"/>
+  </dlg:button>
+  <dlg:button dlg:id="CreateShapesButton" dlg:tab-index="0" dlg:left="9" dlg:top="9" dlg:width="62" dlg:height="16" dlg:value="Create Shapes">
+   <script:event script:event-name="on-performaction" script:macro-name="vnd.sun.star.UNO:onCreateShapesButtonPressed" script:language="UNO"/>
+  </dlg:button>
+  <dlg:button dlg:id="SaveShapesButton" dlg:tab-index="3" dlg:left="80" dlg:top="9" dlg:width="62" dlg:height="16" dlg:value="Save Shapes">
+   <script:event script:event-name="on-performaction" script:macro-name="vnd.sun.star.UNO:onSaveShapesButtonPressed" script:language="UNO"/>
+  </dlg:button>
+  <dlg:text dlg:id="SplineValLabel" dlg:tab-index="4" dlg:left="9" dlg:top="29" dlg:width="34" dlg:height="16" dlg:value="Spline Val" dlg:align="center" dlg:valign="center"/>
+ </dlg:bulletinboard>
+</dlg:window>
